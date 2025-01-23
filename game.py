@@ -25,7 +25,7 @@ class Game:
 
     def play_game(self):
         """Основной метод игрового процесса."""
-        self.screen.fill(settings.MENU_BACKGROUND_COLOR)  # Очистка экрана
+        self.screen.fill(settings.MAIN_GAME_BACKGROUND_COLOR)  # Очистка экрана
         self.screen.blit(self.field_surface, self.field_rect)  # Отображение игрового поля
         self.spawn_food()  # Размещение еды
         self.update_score_display()  # Обновление счета
